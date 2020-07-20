@@ -1,0 +1,474 @@
+﻿{
+  "name": "DataLinejhf12usr",
+  "modelName": "data-line-jhf12-usr",
+  "className": "usr",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "login",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "flexberryType": "varbinary255",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "locked",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "last_name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "first_name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "middle_name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "phone",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "phone_work",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "phone_mobile",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "position",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "department",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "photo",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "thumbnail",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_created",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_locked",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_modified",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_lastlogin",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "full_name",
+      "type": "string",
+      "flexberryType": "varchar767",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "short_name",
+      "type": "string",
+      "flexberryType": "varchar261",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "usrE",
+      "modelName": "data-line-jhf12-usr",
+      "attrs": [
+        {
+          "name": "login",
+          "caption": "Login",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "password",
+          "caption": "Password",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "locked",
+          "caption": "Locked",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "domain",
+          "caption": "Domain",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "last_name",
+          "caption": "Last_name",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "first_name",
+          "caption": "First_name",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "middle_name",
+          "caption": "Middle_name",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "phone",
+          "caption": "Phone",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "phone_work",
+          "caption": "Phone_work",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "phone_mobile",
+          "caption": "Phone_mobile",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "position",
+          "caption": "Position",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "department",
+          "caption": "Department",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "photo",
+          "caption": "Photo",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "thumbnail",
+          "caption": "Thumbnail",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 15
+        },
+        {
+          "name": "dt_locked",
+          "caption": "Dt_locked",
+          "hidden": false,
+          "index": 16
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 17
+        },
+        {
+          "name": "dt_lastlogin",
+          "caption": "Dt_lastlogin",
+          "hidden": false,
+          "index": 18
+        },
+        {
+          "name": "full_name",
+          "caption": "Full_name",
+          "hidden": false,
+          "index": 19
+        },
+        {
+          "name": "short_name",
+          "caption": "Short_name",
+          "hidden": false,
+          "index": 20
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "usrL",
+      "modelName": "data-line-jhf12-usr",
+      "attrs": [
+        {
+          "name": "login",
+          "caption": "Login",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "password",
+          "caption": "Password",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "locked",
+          "caption": "Locked",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "domain",
+          "caption": "Domain",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "last_name",
+          "caption": "Last_name",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "first_name",
+          "caption": "First_name",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "middle_name",
+          "caption": "Middle_name",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "phone",
+          "caption": "Phone",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "phone_work",
+          "caption": "Phone_work",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "phone_mobile",
+          "caption": "Phone_mobile",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "position",
+          "caption": "Position",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "department",
+          "caption": "Department",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "photo",
+          "caption": "Photo",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "thumbnail",
+          "caption": "Thumbnail",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 15
+        },
+        {
+          "name": "dt_locked",
+          "caption": "Dt_locked",
+          "hidden": false,
+          "index": 16
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 17
+        },
+        {
+          "name": "dt_lastlogin",
+          "caption": "Dt_lastlogin",
+          "hidden": false,
+          "index": 18
+        },
+        {
+          "name": "full_name",
+          "caption": "Full_name",
+          "hidden": false,
+          "index": 19
+        },
+        {
+          "name": "short_name",
+          "caption": "Short_name",
+          "hidden": false,
+          "index": 20
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

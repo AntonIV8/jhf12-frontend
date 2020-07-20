@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-service-log-e",
+  "editForm": "data-line-jhf12-service-log-e",
+  "external": false,
+  "caption": "Service_log",
+  "name": "DataLinejhf12service_logL",
+  "className": "service_logL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-log",
+      "modelProjection": "service_logL"
+    }
+  ]
+}

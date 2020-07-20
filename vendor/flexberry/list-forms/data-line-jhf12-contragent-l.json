@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-contragent-e",
+  "editForm": "data-line-jhf12-contragent-e",
+  "external": false,
+  "caption": "Contragent",
+  "name": "DataLinejhf12contragentL",
+  "className": "contragentL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-contragent",
+      "modelProjection": "contragentL"
+    }
+  ]
+}

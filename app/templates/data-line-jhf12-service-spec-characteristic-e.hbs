@@ -1,0 +1,155 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-service-spec-characteristic-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-characteristic-e.name-caption")
+      data-test-data-line-jhf12-service-spec-characteristic-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.value
+      class=(if (v-get validationObject "value" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-characteristic-e.value-caption")
+      data-test-data-line-jhf12-service-spec-characteristic-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "value" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-characteristic-e.can_be_overridden-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.can_be_overridden
+      data-test-data-line-jhf12-service-spec-characteristic-e------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "can_be_overridden" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.label
+      class=(if (v-get validationObject "label" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-characteristic-e.label-caption")
+      data-test-data-line-jhf12-service-spec-characteristic-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "label" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.list
+      class=(if (v-get validationObject "list" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-characteristic-e.list-caption")
+      data-test-data-line-jhf12-service-spec-characteristic-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "list" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-characteristic-e.dictionary_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.dictionary_id
+      relationName="dictionary_id"
+      projection="dictionaryL"
+      title=(t "forms.data-line-jhf12-service-spec-characteristic-e.dictionary_id-caption")
+      readonly=readonly
+      componentName="dictionary_idLookup"
+      data-test-data-line-jhf12-service-spec-characteristic-e--------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dictionary_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.dictionary_id.name
+      class=(if (v-get validationObject "dictionary_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-characteristic-e.dictionary_id.name-caption")
+      data-test-data-line-jhf12-service-spec-characteristic-e-------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dictionary_id.name" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-characteristic-e.service_spec_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.service_spec_id
+      relationName="service_spec_id"
+      projection="service_specL"
+      title=(t "forms.data-line-jhf12-service-spec-characteristic-e.service_spec_id-caption")
+      readonly=readonly
+      componentName="service_spec_idLookup"
+      data-test-data-line-jhf12-service-spec-characteristic-e----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_spec_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.service_spec_id.enum
+      class=(if (v-get validationObject "service_spec_id.enum" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-characteristic-e.service_spec_id.enum-caption")
+      data-test-data-line-jhf12-service-spec-characteristic-e---------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_spec_id.enum" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-characteristic-e.type-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.type
+      relationName="type"
+      projection="characteristic_typeL"
+      title=(t "forms.data-line-jhf12-service-spec-characteristic-e.type-caption")
+      readonly=readonly
+      componentName="typeLookup"
+      data-test-data-line-jhf12-service-spec-characteristic-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "type" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.type.regex
+      class=(if (v-get validationObject "type.regex" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-characteristic-e.type.regex-caption")
+      data-test-data-line-jhf12-service-spec-characteristic-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "type.regex" "messages")}}
+  </div>
+</form>

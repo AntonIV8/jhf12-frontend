@@ -1,0 +1,180 @@
+﻿{
+  "name": "DataLinejhf12resource_common",
+  "modelName": "data-line-jhf12-resource-common",
+  "className": "resource_common",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "external_id",
+      "type": "string",
+      "flexberryType": "varchar128",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_created",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_modified",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "resource_commonE",
+      "modelName": "data-line-jhf12-resource-common",
+      "attrs": [
+        {
+          "name": "external_id",
+          "caption": "External_id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "category",
+          "caption": "Category",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "type",
+          "caption": "Type",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "resource_commonL",
+      "modelName": "data-line-jhf12-resource-common",
+      "attrs": [
+        {
+          "name": "external_id",
+          "caption": "External_id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "category",
+          "caption": "Category",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "type",
+          "caption": "Type",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

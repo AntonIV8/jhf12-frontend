@@ -1,0 +1,4 @@
+import DataLinejhf12resource_characteristicEController from '../data-line-jhf12-resource-characteristic-e';
+
+var DataLinejhf12resource_characteristicENewController = DataLinejhf12resource_characteristicEController;
+export default DataLinejhf12resource_characteristicENewController;

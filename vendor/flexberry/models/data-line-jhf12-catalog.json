@@ -1,0 +1,348 @@
+﻿{
+  "name": "DataLinejhf12catalog",
+  "modelName": "data-line-jhf12-catalog",
+  "className": "catalog",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "code",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "svc",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "svc_type",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "data_version",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_sync",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "descr",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "vat",
+      "type": "string",
+      "flexberryType": "varchar31",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "is_actual",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_creation",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "parent_key",
+      "type": "guid",
+      "flexberryType": "guid",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "measure",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "measure_key",
+      "type": "guid",
+      "flexberryType": "guid",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "flexberryType": "varchar10",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "formula_key",
+      "type": "guid",
+      "flexberryType": "guid",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "billing_object_type_guid",
+      "type": "guid",
+      "flexberryType": "guid",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "catalogE",
+      "modelName": "data-line-jhf12-catalog",
+      "attrs": [
+        {
+          "name": "code",
+          "caption": "Code",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "svc",
+          "caption": "Svc",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "svc_type",
+          "caption": "Svc_type",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "data_version",
+          "caption": "Data_version",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "dt_sync",
+          "caption": "Dt_sync",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "descr",
+          "caption": "Descr",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "vat",
+          "caption": "Vat",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "is_actual",
+          "caption": "Is_actual",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "dt_creation",
+          "caption": "Dt_creation",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "parent_key",
+          "caption": "Parent_key",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "measure",
+          "caption": "Measure",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "measure_key",
+          "caption": "Measure_key",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "status",
+          "caption": "Status",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "formula_key",
+          "caption": "Formula_key",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "billing_object_type_guid",
+          "caption": "Billing_object_type_guid",
+          "hidden": false,
+          "index": 14
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "catalogL",
+      "modelName": "data-line-jhf12-catalog",
+      "attrs": [
+        {
+          "name": "code",
+          "caption": "Code",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "svc",
+          "caption": "Svc",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "svc_type",
+          "caption": "Svc_type",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "data_version",
+          "caption": "Data_version",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "dt_sync",
+          "caption": "Dt_sync",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "descr",
+          "caption": "Descr",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "vat",
+          "caption": "Vat",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "is_actual",
+          "caption": "Is_actual",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "dt_creation",
+          "caption": "Dt_creation",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "parent_key",
+          "caption": "Parent_key",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "measure",
+          "caption": "Measure",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "measure_key",
+          "caption": "Measure_key",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "status",
+          "caption": "Status",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "formula_key",
+          "caption": "Formula_key",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "billing_object_type_guid",
+          "caption": "Billing_object_type_guid",
+          "hidden": false,
+          "index": 14
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

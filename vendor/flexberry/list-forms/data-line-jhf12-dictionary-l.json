@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-dictionary-e",
+  "editForm": "data-line-jhf12-dictionary-e",
+  "external": false,
+  "caption": "Dictionary",
+  "name": "DataLinejhf12dictionaryL",
+  "className": "dictionaryL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-dictionary",
+      "modelProjection": "dictionaryL"
+    }
+  ]
+}

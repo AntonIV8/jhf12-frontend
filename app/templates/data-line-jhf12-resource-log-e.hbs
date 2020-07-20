@@ -1,0 +1,165 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-resource-log-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.resource_id
+      class=(if (v-get validationObject "resource_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.resource_id-caption")
+      data-test-data-line-jhf12-resource-log-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.parent_id
+      class=(if (v-get validationObject "parent_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.parent_id-caption")
+      data-test-data-line-jhf12-resource-log-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.cfs_id
+      class=(if (v-get validationObject "cfs_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.cfs_id-caption")
+      data-test-data-line-jhf12-resource-log-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "cfs_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.parent_service_id
+      class=(if (v-get validationObject "parent_service_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.parent_service_id-caption")
+      data-test-data-line-jhf12-resource-log-e------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_service_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.resource_shared_id
+      class=(if (v-get validationObject "resource_shared_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.resource_shared_id-caption")
+      data-test-data-line-jhf12-resource-log-e-------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_shared_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.contragent_id
+      class=(if (v-get validationObject "contragent_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.contragent_id-caption")
+      data-test-data-line-jhf12-resource-log-e--------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "contragent_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.customer_id
+      class=(if (v-get validationObject "customer_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.customer_id-caption")
+      data-test-data-line-jhf12-resource-log-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "customer_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.resource_spec_id
+      class=(if (v-get validationObject "resource_spec_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.resource_spec_id-caption")
+      data-test-data-line-jhf12-resource-log-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_spec_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.name-caption")
+      data-test-data-line-jhf12-resource-log-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.description
+      class=(if (v-get validationObject "description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.description-caption")
+      data-test-data-line-jhf12-resource-log-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "description" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.external_id
+      class=(if (v-get validationObject "external_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-log-e.external_id-caption")
+      data-test-data-line-jhf12-resource-log-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "external_id" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-log-e.start_time-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.start_time
+      class=(if (v-get validationObject "start_time" "isInvalid") "error")
+      data-test-data-line-jhf12-resource-log-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "start_time" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-log-e.end_time-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.end_time
+      class=(if (v-get validationObject "end_time" "isInvalid") "error")
+      data-test-data-line-jhf12-resource-log-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "end_time" "messages")}}
+  </div>
+
+</form>

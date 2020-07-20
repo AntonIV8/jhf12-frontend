@@ -1,0 +1,4 @@
+import DataLinejhf12service_characteristicEController from '../data-line-jhf12-service-characteristic-e';
+
+var DataLinejhf12service_characteristicENewController = DataLinejhf12service_characteristicEController;
+export default DataLinejhf12service_characteristicENewController;

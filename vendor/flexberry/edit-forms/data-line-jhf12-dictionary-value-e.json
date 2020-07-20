@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "dictionary_id",
+      "projection": "dictionaryL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Dictionary_value",
+  "name": "DataLinejhf12dictionary_valueE",
+  "className": "dictionary_valueE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-dictionary-value",
+      "modelProjection": "dictionary_valueE"
+    }
+  ]
+}

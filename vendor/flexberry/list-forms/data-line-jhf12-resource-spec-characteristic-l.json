@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-resource-spec-characteristic-e",
+  "editForm": "data-line-jhf12-resource-spec-characteristic-e",
+  "external": false,
+  "caption": "Resource_spec_characteristic",
+  "name": "DataLinejhf12resource_spec_characteristicL",
+  "className": "resource_spec_characteristicL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-spec-characteristic",
+      "modelProjection": "resource_spec_characteristicL"
+    }
+  ]
+}

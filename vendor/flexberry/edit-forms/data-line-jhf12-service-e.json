@@ -1,0 +1,63 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "contragent_id",
+      "projection": "contragentL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "cfs_id",
+      "projection": "serviceL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "service_spec_id",
+      "projection": "service_specL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "state",
+      "projection": "service_stateL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "customer_id",
+      "projection": "customerL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "parent_id",
+      "projection": "serviceL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Service",
+  "name": "DataLinejhf12serviceE",
+  "className": "serviceE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service",
+      "modelProjection": "serviceE"
+    }
+  ]
+}

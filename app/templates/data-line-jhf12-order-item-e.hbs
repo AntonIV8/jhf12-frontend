@@ -1,0 +1,267 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-order-item-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.action
+      class=(if (v-get validationObject "action" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.action-caption")
+      data-test-data-line-jhf12-order-item-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "action" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.price
+      class=(if (v-get validationObject "price" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.price-caption")
+      data-test-data-line-jhf12-order-item-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "price" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.dt_created-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_created
+      class=(if (v-get validationObject "dt_created" "isInvalid") "error")
+      data-test-data-line-jhf12-order-item-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_created" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.dt_modified-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_modified
+      class=(if (v-get validationObject "dt_modified" "isInvalid") "error")
+      data-test-data-line-jhf12-order-item-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_modified" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.log
+      class=(if (v-get validationObject "log" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.log-caption")
+      data-test-data-line-jhf12-order-item-e----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "log" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.clone_service_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.clone_service_id
+      relationName="clone_service_id"
+      projection="serviceL"
+      title=(t "forms.data-line-jhf12-order-item-e.clone_service_id-caption")
+      readonly=readonly
+      componentName="clone_service_idLookup"
+      data-test-data-line-jhf12-order-item-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "clone_service_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.clone_service_id.name
+      class=(if (v-get validationObject "clone_service_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.clone_service_id.name-caption")
+      data-test-data-line-jhf12-order-item-e----------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "clone_service_id.name" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.service_order_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.service_order_id
+      relationName="service_order_id"
+      projection="service_orderL"
+      title=(t "forms.data-line-jhf12-order-item-e.service_order_id-caption")
+      readonly=readonly
+      componentName="service_order_idLookup"
+      data-test-data-line-jhf12-order-item-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_order_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.service_order_id.description
+      class=(if (v-get validationObject "service_order_id.description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.service_order_id.description-caption")
+      data-test-data-line-jhf12-order-item-e-----------------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_order_id.description" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.service_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.service_id
+      relationName="service_id"
+      projection="serviceL"
+      title=(t "forms.data-line-jhf12-order-item-e.service_id-caption")
+      readonly=readonly
+      componentName="service_idLookup"
+      data-test-data-line-jhf12-order-item-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.service_id.name
+      class=(if (v-get validationObject "service_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.service_id.name-caption")
+      data-test-data-line-jhf12-order-item-e----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_id.name" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.creator_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.creator_id
+      relationName="creator_id"
+      projection="usrL"
+      title=(t "forms.data-line-jhf12-order-item-e.creator_id-caption")
+      readonly=readonly
+      componentName="creator_idLookup"
+      data-test-data-line-jhf12-order-item-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "creator_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.creator_id.login
+      class=(if (v-get validationObject "creator_id.login" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.creator_id.login-caption")
+      data-test-data-line-jhf12-order-item-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "creator_id.login" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.state-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.state
+      relationName="state"
+      projection="order_stateL"
+      title=(t "forms.data-line-jhf12-order-item-e.state-caption")
+      readonly=readonly
+      componentName="stateLookup"
+      data-test-data-line-jhf12-order-item-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "state" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.state.description
+      class=(if (v-get validationObject "state.description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.state.description-caption")
+      data-test-data-line-jhf12-order-item-e------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "state.description" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.modifier_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.modifier_id
+      relationName="modifier_id"
+      projection="usrL"
+      title=(t "forms.data-line-jhf12-order-item-e.modifier_id-caption")
+      readonly=readonly
+      componentName="modifier_idLookup"
+      data-test-data-line-jhf12-order-item-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "modifier_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.modifier_id.login
+      class=(if (v-get validationObject "modifier_id.login" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.modifier_id.login-caption")
+      data-test-data-line-jhf12-order-item-e------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "modifier_id.login" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-order-item-e.parent_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.parent_id
+      relationName="parent_id"
+      projection="order_itemL"
+      title=(t "forms.data-line-jhf12-order-item-e.parent_id-caption")
+      readonly=readonly
+      componentName="parent_idLookup"
+      data-test-data-line-jhf12-order-item-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.parent_id.action
+      class=(if (v-get validationObject "parent_id.action" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-order-item-e.parent_id.action-caption")
+      data-test-data-line-jhf12-order-item-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_id.action" "messages")}}
+  </div>
+</form>

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Resource_common",
+  "name": "DataLinejhf12resource_commonE",
+  "className": "resource_commonE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-common",
+      "modelProjection": "resource_commonE"
+    }
+  ]
+}

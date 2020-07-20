@@ -1,0 +1,71 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "clone_service_id",
+      "projection": "serviceL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "service_order_id",
+      "projection": "service_orderL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "service_id",
+      "projection": "serviceL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "creator_id",
+      "projection": "usrL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "state",
+      "projection": "order_stateL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "modifier_id",
+      "projection": "usrL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "parent_id",
+      "projection": "order_itemL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Order_item",
+  "name": "DataLinejhf12order_itemE",
+  "className": "order_itemE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-order-item",
+      "modelProjection": "order_itemE"
+    }
+  ]
+}

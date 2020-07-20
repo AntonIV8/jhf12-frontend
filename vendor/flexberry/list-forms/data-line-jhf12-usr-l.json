@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-usr-e",
+  "editForm": "data-line-jhf12-usr-e",
+  "external": false,
+  "caption": "Usr",
+  "name": "DataLinejhf12usrL",
+  "className": "usrL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-usr",
+      "modelProjection": "usrL"
+    }
+  ]
+}

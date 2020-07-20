@@ -1,0 +1,79 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-user-role-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-user-role-e.role_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.role_id
+      relationName="role_id"
+      projection="roleL"
+      title=(t "forms.data-line-jhf12-user-role-e.role_id-caption")
+      readonly=readonly
+      componentName="role_idLookup"
+      data-test-data-line-jhf12-user-role-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "role_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.role_id.name
+      class=(if (v-get validationObject "role_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-user-role-e.role_id.name-caption")
+      data-test-data-line-jhf12-user-role-e-------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "role_id.name" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-user-role-e.user_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.user_id
+      relationName="user_id"
+      projection="usrL"
+      title=(t "forms.data-line-jhf12-user-role-e.user_id-caption")
+      readonly=readonly
+      componentName="user_idLookup"
+      data-test-data-line-jhf12-user-role-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "user_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.user_id.login
+      class=(if (v-get validationObject "user_id.login" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-user-role-e.user_id.login-caption")
+      data-test-data-line-jhf12-user-role-e--------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "user_id.login" "messages")}}
+  </div>
+</form>

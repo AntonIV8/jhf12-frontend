@@ -1,0 +1,20 @@
+export default {
+  caption: 'DataLinejhf12service_orderE',
+  'description-caption': 'description',
+  'dt_completed-caption': 'dt_completed',
+  'dt_created-caption': 'dt_created',
+  'dt_modified-caption': 'dt_modified',
+  'dt_started-caption': 'dt_started',
+  'external_id-caption': 'external_id',
+  'price-caption': 'price',
+  'contragent_id.contragent-caption': 'contragent_id.contragent',
+  'customer_id.customer-caption': 'customer_id.customer',
+  'state.description-caption': 'state.description',
+  'modifier_id.login-caption': 'modifier_id.login',
+  'creator_id.login-caption': 'creator_id.login',
+  'contragent_id-caption': 'contragent_id',
+  'customer_id-caption': 'customer_id',
+  'state-caption': 'state',
+  'modifier_id-caption': 'modifier_id',
+  'creator_id-caption': 'creator_id'
+};

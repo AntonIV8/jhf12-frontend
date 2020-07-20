@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "group_id",
+      "projection": "grpL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "user_id",
+      "projection": "usrL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "User_group",
+  "name": "DataLinejhf12user_groupE",
+  "className": "user_groupE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-user-group",
+      "modelProjection": "user_groupE"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+﻿{
+  "applicationCaption": "Jhf12",
+  "applicationTitle": "Jhf12",
+  "items": [
+    {
+      "link": null,
+      "menuName": "jhf12",
+      "caption": "jhf12",
+      "title": "jhf12",
+      "children": [
+        {
+          "link": "data-line-jhf12-contragent-l",
+          "menuName": null,
+          "caption": "Contragent",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-user-group-l",
+          "menuName": null,
+          "caption": "User_group",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-characteristic-type-l",
+          "menuName": null,
+          "caption": "Characteristic_type",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-user-role-l",
+          "menuName": null,
+          "caption": "User_role",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-l",
+          "menuName": null,
+          "caption": "Resource",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-dba-l",
+          "menuName": null,
+          "caption": "Dba",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-log-l",
+          "menuName": null,
+          "caption": "Resource_log",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-order-state-l",
+          "menuName": null,
+          "caption": "Order_state",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-order-item-l",
+          "menuName": null,
+          "caption": "Order_item",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-characteristic-log-l",
+          "menuName": null,
+          "caption": "Service_characteristic_log",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-catalog-l",
+          "menuName": null,
+          "caption": "Catalog",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-user-resource-spec-l",
+          "menuName": null,
+          "caption": "User_resource_spec",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-usage-spec-l",
+          "menuName": null,
+          "caption": "Resource_usage_spec",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-usage-spec-l",
+          "menuName": null,
+          "caption": "Service_usage_spec",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-user-service-spec-l",
+          "menuName": null,
+          "caption": "User_service_spec",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-spec-acl-l",
+          "menuName": null,
+          "caption": "Service_spec_acl",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-characteristic-log-l",
+          "menuName": null,
+          "caption": "Resource_characteristic_log",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-log-l",
+          "menuName": null,
+          "caption": "Service_log",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-shared-l",
+          "menuName": null,
+          "caption": "Resource_shared",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-spec-l",
+          "menuName": null,
+          "caption": "Resource_spec",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-user-service-order-l",
+          "menuName": null,
+          "caption": "User_service_order",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-product-catalog-l",
+          "menuName": null,
+          "caption": "Product_catalog",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-cardinality-type-l",
+          "menuName": null,
+          "caption": "Cardinality_type",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-characteristic-l",
+          "menuName": null,
+          "caption": "Resource_characteristic",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-usr-l",
+          "menuName": null,
+          "caption": "Usr",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-customer-l",
+          "menuName": null,
+          "caption": "Customer",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-grp-l",
+          "menuName": null,
+          "caption": "Grp",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-common-l",
+          "menuName": null,
+          "caption": "Resource_common",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-customer-acl-l",
+          "menuName": null,
+          "caption": "Customer_acl",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-spec-l",
+          "menuName": null,
+          "caption": "Service_spec",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-role-l",
+          "menuName": null,
+          "caption": "Role",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-dictionary-l",
+          "menuName": null,
+          "caption": "Dictionary",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-resource-spec-characteristic-l",
+          "menuName": null,
+          "caption": "Resource_spec_characteristic",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-l",
+          "menuName": null,
+          "caption": "Service",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-spec-characteristic-l",
+          "menuName": null,
+          "caption": "Service_spec_characteristic",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-characteristic-l",
+          "menuName": null,
+          "caption": "Service_characteristic",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-state-l",
+          "menuName": null,
+          "caption": "Service_state",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-dictionary-value-l",
+          "menuName": null,
+          "caption": "Dictionary_value",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "data-line-jhf12-service-order-l",
+          "menuName": null,
+          "caption": "Service_order",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

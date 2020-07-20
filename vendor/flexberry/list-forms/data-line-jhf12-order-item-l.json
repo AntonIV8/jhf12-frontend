@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-order-item-e",
+  "editForm": "data-line-jhf12-order-item-e",
+  "external": false,
+  "caption": "Order_item",
+  "name": "DataLinejhf12order_itemL",
+  "className": "order_itemL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-order-item",
+      "modelProjection": "order_itemL"
+    }
+  ]
+}

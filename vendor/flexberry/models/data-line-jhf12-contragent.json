@@ -1,0 +1,358 @@
+﻿{
+  "name": "DataLinejhf12contragent",
+  "modelName": "data-line-jhf12-contragent",
+  "className": "contragent",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "contragent",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "descr",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "official_name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "creator_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "modifier_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_created",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_modified",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iNN",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "guid1c",
+      "type": "guid",
+      "flexberryType": "guid",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "archive",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_archive",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "archiver_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "archive_reason_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "customer_id",
+      "relatedTo": "data-line-jhf12-customer",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "contragentE",
+      "modelName": "data-line-jhf12-contragent",
+      "attrs": [
+        {
+          "name": "contragent",
+          "caption": "Contragent",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "descr",
+          "caption": "Descr",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "official_name",
+          "caption": "Official_name",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "creator_id",
+          "caption": "Creator_id",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "modifier_id",
+          "caption": "Modifier_id",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "iNN",
+          "caption": "INN",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "guid1c",
+          "caption": "Guid1c",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "archive",
+          "caption": "Archive",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "dt_archive",
+          "caption": "Dt_archive",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "archiver_id",
+          "caption": "Archiver_id",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "archive_reason_id",
+          "caption": "Archive_reason_id",
+          "hidden": false,
+          "index": 12
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "customer_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "customer",
+              "caption": "Customer",
+              "hidden": false,
+              "index": 14
+            }
+          ],
+          "index": 13,
+          "type": "default",
+          "caption": "Customer_id",
+          "name": "customer_id",
+          "relatedTo": "data-line-jhf12-customer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "contragentL",
+      "modelName": "data-line-jhf12-contragent",
+      "attrs": [
+        {
+          "name": "contragent",
+          "caption": "Contragent",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "descr",
+          "caption": "Descr",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "official_name",
+          "caption": "Official_name",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "creator_id",
+          "caption": "Creator_id",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "modifier_id",
+          "caption": "Modifier_id",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "iNN",
+          "caption": "INN",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "guid1c",
+          "caption": "Guid1c",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "archive",
+          "caption": "Archive",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "dt_archive",
+          "caption": "Dt_archive",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "archiver_id",
+          "caption": "Archiver_id",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "archive_reason_id",
+          "caption": "Archive_reason_id",
+          "hidden": false,
+          "index": 12
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "customer_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "customer",
+              "caption": "Customer",
+              "hidden": false,
+              "index": 13
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Customer",
+          "name": "customer_id",
+          "relatedTo": "data-line-jhf12-customer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

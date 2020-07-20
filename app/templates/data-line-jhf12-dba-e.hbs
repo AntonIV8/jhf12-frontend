@@ -1,0 +1,87 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-dba-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-dba-e.dt_upgrade-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_upgrade
+      class=(if (v-get validationObject "dt_upgrade" "isInvalid") "error")
+      data-test-data-line-jhf12-dba-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_upgrade" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.description
+      class=(if (v-get validationObject "description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-dba-e.description-caption")
+      data-test-data-line-jhf12-dba-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "description" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.script
+      class=(if (v-get validationObject "script" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-dba-e.script-caption")
+      data-test-data-line-jhf12-dba-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "script" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-dba-e.prev_version-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.prev_version
+      relationName="prev_version"
+      projection="dbaL"
+      title=(t "forms.data-line-jhf12-dba-e.prev_version-caption")
+      readonly=readonly
+      componentName="prev_versionLookup"
+      data-test-data-line-jhf12-dba-e-------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "prev_version" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.prev_version.description
+      class=(if (v-get validationObject "prev_version.description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-dba-e.prev_version.description-caption")
+      data-test-data-line-jhf12-dba-e-------------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "prev_version.description" "messages")}}
+  </div>
+</form>

@@ -1,0 +1,4 @@
+import DataLinejhf12service_characteristic_logEController from '../data-line-jhf12-service-characteristic-log-e';
+
+var DataLinejhf12service_characteristic_logENewController = DataLinejhf12service_characteristic_logEController;
+export default DataLinejhf12service_characteristic_logENewController;

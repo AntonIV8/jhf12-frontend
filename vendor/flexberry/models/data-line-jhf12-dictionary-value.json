@@ -1,0 +1,113 @@
+﻿{
+  "name": "DataLinejhf12dictionary_value",
+  "modelName": "data-line-jhf12-dictionary-value",
+  "className": "dictionary_value",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "value",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "dictionary_id",
+      "relatedTo": "data-line-jhf12-dictionary",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "dictionary_id",
+      "relatedTo": "data-line-jhf12-dictionary",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "dictionary_valueE",
+      "modelName": "data-line-jhf12-dictionary-value",
+      "attrs": [
+        {
+          "name": "value",
+          "caption": "Value",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "dictionary_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Dictionary_id",
+          "name": "dictionary_id",
+          "relatedTo": "data-line-jhf12-dictionary",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "dictionary_valueL",
+      "modelName": "data-line-jhf12-dictionary-value",
+      "attrs": [
+        {
+          "name": "value",
+          "caption": "Value",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "dictionary_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "dictionary_id",
+          "relatedTo": "data-line-jhf12-dictionary",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

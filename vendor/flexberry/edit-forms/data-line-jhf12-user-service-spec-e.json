@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "service_spec_id",
+      "projection": "service_specL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "user_id",
+      "projection": "usrL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "User_service_spec",
+  "name": "DataLinejhf12user_service_specE",
+  "className": "user_service_specE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-user-service-spec",
+      "modelProjection": "user_service_specE"
+    }
+  ]
+}

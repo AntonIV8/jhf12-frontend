@@ -1,0 +1,21 @@
+export default {
+  caption: 'DataLinejhf12customerE',
+  'customer-caption': 'customer',
+  'descr-caption': 'descr',
+  'service_manager_id-caption': 'service_manager_id',
+  'creator_id-caption': 'creator_id',
+  'modifier_id-caption': 'modifier_id',
+  'dt_created-caption': 'dt_created',
+  'dt_modified-caption': 'dt_modified',
+  'archive-caption': 'archive',
+  'dt_archive-caption': 'dt_archive',
+  'archiver_id-caption': 'archiver_id',
+  'archive_reason_id-caption': 'archive_reason_id',
+  'internal-caption': 'internal',
+  'telco-caption': 'telco',
+  'office-caption': 'office',
+  'barrier-caption': 'barrier',
+  'pci_dss-caption': 'pci_dss',
+  'federal_low_152-caption': 'federal_low_152',
+  'account_manager_id-caption': 'account_manager_id'
+};

@@ -1,0 +1,119 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-service-spec-acl-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-acl-e.a_create-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.a_create
+      data-test-data-line-jhf12-service-spec-acl-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "a_create" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-acl-e.a_read-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.a_read
+      data-test-data-line-jhf12-service-spec-acl-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "a_read" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-acl-e.a_update-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.a_update
+      data-test-data-line-jhf12-service-spec-acl-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "a_update" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-acl-e.a_delete-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.a_delete
+      data-test-data-line-jhf12-service-spec-acl-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "a_delete" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-acl-e.group_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.group_id
+      relationName="group_id"
+      projection="grpL"
+      title=(t "forms.data-line-jhf12-service-spec-acl-e.group_id-caption")
+      readonly=readonly
+      componentName="group_idLookup"
+      data-test-data-line-jhf12-service-spec-acl-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "group_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.group_id.name
+      class=(if (v-get validationObject "group_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-acl-e.group_id.name-caption")
+      data-test-data-line-jhf12-service-spec-acl-e--------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "group_id.name" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-service-spec-acl-e.service_spec_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.service_spec_id
+      relationName="service_spec_id"
+      projection="service_specL"
+      title=(t "forms.data-line-jhf12-service-spec-acl-e.service_spec_id-caption")
+      readonly=readonly
+      componentName="service_spec_idLookup"
+      data-test-data-line-jhf12-service-spec-acl-e----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_spec_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.service_spec_id.enum
+      class=(if (v-get validationObject "service_spec_id.enum" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-service-spec-acl-e.service_spec_id.enum-caption")
+      data-test-data-line-jhf12-service-spec-acl-e---------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "service_spec_id.enum" "messages")}}
+  </div>
+</form>

@@ -1,0 +1,21 @@
+export default {
+  caption: 'Customer',
+  'customer-caption': 'Customer',
+  'descr-caption': 'Descr',
+  'service_manager_id-caption': 'Service_manager_id',
+  'creator_id-caption': 'Creator_id',
+  'modifier_id-caption': 'Modifier_id',
+  'dt_created-caption': 'Dt_created',
+  'dt_modified-caption': 'Dt_modified',
+  'archive-caption': 'Archive',
+  'dt_archive-caption': 'Dt_archive',
+  'archiver_id-caption': 'Archiver_id',
+  'archive_reason_id-caption': 'Archive_reason_id',
+  'internal-caption': 'Internal',
+  'telco-caption': 'Telco',
+  'office-caption': 'Office',
+  'barrier-caption': 'Barrier',
+  'pci_dss-caption': 'Pci_dss',
+  'federal_low_152-caption': 'Federal_low_152',
+  'account_manager_id-caption': 'Account_manager_id'
+};

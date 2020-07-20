@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-user-resource-spec-e",
+  "editForm": "data-line-jhf12-user-resource-spec-e",
+  "external": false,
+  "caption": "User_resource_spec",
+  "name": "DataLinejhf12user_resource_specL",
+  "className": "user_resource_specL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-user-resource-spec",
+      "modelProjection": "user_resource_specL"
+    }
+  ]
+}

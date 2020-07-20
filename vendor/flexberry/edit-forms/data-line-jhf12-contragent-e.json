@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "customer_id",
+      "projection": "customerL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Contragent",
+  "name": "DataLinejhf12contragentE",
+  "className": "contragentE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-contragent",
+      "modelProjection": "contragentE"
+    }
+  ]
+}

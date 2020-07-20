@@ -1,0 +1,71 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "resource_spec_id",
+      "projection": "resource_specL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "cfs_id",
+      "projection": "serviceL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "parent_service_id",
+      "projection": "serviceL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "resource_shared_id",
+      "projection": "resource_sharedL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "customer_id",
+      "projection": "customerL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "contragent_id",
+      "projection": "contragentL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "parent_id",
+      "projection": "resourceL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Resource",
+  "name": "DataLinejhf12resourceE",
+  "className": "resourceE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource",
+      "modelProjection": "resourceE"
+    }
+  ]
+}

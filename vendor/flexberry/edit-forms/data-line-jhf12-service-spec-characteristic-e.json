@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "dictionary_id",
+      "projection": "dictionaryL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "service_spec_id",
+      "projection": "service_specL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "type",
+      "projection": "characteristic_typeL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Service_spec_characteristic",
+  "name": "DataLinejhf12service_spec_characteristicE",
+  "className": "service_spec_characteristicE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-spec-characteristic",
+      "modelProjection": "service_spec_characteristicE"
+    }
+  ]
+}

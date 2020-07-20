@@ -1,0 +1,75 @@
+﻿{
+  "name": "DataLinejhf12characteristic_type",
+  "modelName": "data-line-jhf12-characteristic-type",
+  "className": "characteristic_type",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "regex",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "characteristic_typeE",
+      "modelName": "data-line-jhf12-characteristic-type",
+      "attrs": [
+        {
+          "name": "regex",
+          "caption": "Regex",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "characteristic_typeL",
+      "modelName": "data-line-jhf12-characteristic-type",
+      "attrs": [
+        {
+          "name": "regex",
+          "caption": "Regex",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

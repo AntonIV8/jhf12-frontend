@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-resource-common-e",
+  "editForm": "data-line-jhf12-resource-common-e",
+  "external": false,
+  "caption": "Resource_common",
+  "name": "DataLinejhf12resource_commonL",
+  "className": "resource_commonL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-common",
+      "modelProjection": "resource_commonL"
+    }
+  ]
+}

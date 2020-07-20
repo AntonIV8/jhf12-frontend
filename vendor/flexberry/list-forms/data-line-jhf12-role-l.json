@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-role-e",
+  "editForm": "data-line-jhf12-role-e",
+  "external": false,
+  "caption": "Role",
+  "name": "DataLinejhf12roleL",
+  "className": "roleL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-role",
+      "modelProjection": "roleL"
+    }
+  ]
+}

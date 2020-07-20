@@ -1,0 +1,442 @@
+﻿{
+  "name": "DataLinejhf12service_order",
+  "modelName": "data-line-jhf12-service-order",
+  "className": "service_order",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_completed",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_created",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_modified",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_started",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "external_id",
+      "type": "guid",
+      "flexberryType": "guid",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "price",
+      "type": "decimal",
+      "flexberryType": "money",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "contragent_id",
+      "relatedTo": "data-line-jhf12-contragent",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "customer_id",
+      "relatedTo": "data-line-jhf12-customer",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "state",
+      "relatedTo": "data-line-jhf12-order-state",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "state",
+      "relatedTo": "data-line-jhf12-order-state",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "customer_id",
+      "relatedTo": "data-line-jhf12-customer",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "modifier_id",
+      "relatedTo": "data-line-jhf12-usr",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "creator_id",
+      "relatedTo": "data-line-jhf12-usr",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "service_orderE",
+      "modelName": "data-line-jhf12-service-order",
+      "attrs": [
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dt_completed",
+          "caption": "Dt_completed",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "dt_started",
+          "caption": "Dt_started",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "external_id",
+          "caption": "External_id",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "contragent_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "contragent",
+              "caption": "Contragent",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "default",
+          "caption": "Contragent_id",
+          "name": "contragent_id",
+          "relatedTo": "data-line-jhf12-contragent",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "customer_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "customer",
+              "caption": "Customer",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": 9,
+          "type": "default",
+          "caption": "Customer_id",
+          "name": "customer_id",
+          "relatedTo": "data-line-jhf12-customer",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "state",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 11,
+          "type": "default",
+          "caption": "State",
+          "name": "state",
+          "relatedTo": "data-line-jhf12-order-state",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "modifier_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 18
+            }
+          ],
+          "index": 17,
+          "type": "default",
+          "caption": "Modifier_id",
+          "name": "modifier_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "creator_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 20
+            }
+          ],
+          "index": 19,
+          "type": "default",
+          "caption": "Creator_id",
+          "name": "creator_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "service_orderL",
+      "modelName": "data-line-jhf12-service-order",
+      "attrs": [
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dt_completed",
+          "caption": "Dt_completed",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "dt_started",
+          "caption": "Dt_started",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "external_id",
+          "caption": "External_id",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "contragent_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "contragent",
+              "caption": "Contragent",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Contragent",
+          "name": "contragent_id",
+          "relatedTo": "data-line-jhf12-contragent",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "customer_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "customer",
+              "caption": "Customer",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Customer",
+          "name": "customer_id",
+          "relatedTo": "data-line-jhf12-customer",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "state",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Description",
+          "name": "state",
+          "relatedTo": "data-line-jhf12-order-state",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "modifier_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Login",
+          "name": "modifier_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "creator_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 13
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Login",
+          "name": "creator_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

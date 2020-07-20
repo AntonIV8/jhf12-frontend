@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-service-characteristic-e",
+  "editForm": "data-line-jhf12-service-characteristic-e",
+  "external": false,
+  "caption": "Service_characteristic",
+  "name": "DataLinejhf12service_characteristicL",
+  "className": "service_characteristicL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-characteristic",
+      "modelProjection": "service_characteristicL"
+    }
+  ]
+}

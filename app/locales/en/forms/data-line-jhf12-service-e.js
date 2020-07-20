@@ -1,0 +1,20 @@
+export default {
+  caption: 'DataLinejhf12serviceE',
+  'name-caption': 'name',
+  'description-caption': 'description',
+  'dt_created-caption': 'dt_created',
+  'dt_started-caption': 'dt_started',
+  'dt_ended-caption': 'dt_ended',
+  'contragent_id.contragent-caption': 'contragent_id.contragent',
+  'cfs_id.name-caption': 'cfs_id.name',
+  'service_spec_id.enum-caption': 'service_spec_id.enum',
+  'state.description-caption': 'state.description',
+  'customer_id.customer-caption': 'customer_id.customer',
+  'parent_id.name-caption': 'parent_id.name',
+  'contragent_id-caption': 'contragent_id',
+  'cfs_id-caption': 'cfs_id',
+  'service_spec_id-caption': 'service_spec_id',
+  'state-caption': 'state',
+  'customer_id-caption': 'customer_id',
+  'parent_id-caption': 'parent_id'
+};

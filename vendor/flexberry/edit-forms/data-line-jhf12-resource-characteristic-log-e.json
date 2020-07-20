@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Resource_characteristic_log",
+  "name": "DataLinejhf12resource_characteristic_logE",
+  "className": "resource_characteristic_logE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-characteristic-log",
+      "modelProjection": "resource_characteristic_logE"
+    }
+  ]
+}

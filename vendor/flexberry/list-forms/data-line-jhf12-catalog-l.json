@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-catalog-e",
+  "editForm": "data-line-jhf12-catalog-e",
+  "external": false,
+  "caption": "Catalog",
+  "name": "DataLinejhf12catalogL",
+  "className": "catalogL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-catalog",
+      "modelProjection": "catalogL"
+    }
+  ]
+}

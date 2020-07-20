@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "role_id",
+      "projection": "roleL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "user_id",
+      "projection": "usrL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "User_role",
+  "name": "DataLinejhf12user_roleE",
+  "className": "user_roleE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-user-role",
+      "modelProjection": "user_roleE"
+    }
+  ]
+}

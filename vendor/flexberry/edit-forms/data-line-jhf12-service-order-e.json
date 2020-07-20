@@ -1,0 +1,55 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "contragent_id",
+      "projection": "contragentL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "customer_id",
+      "projection": "customerL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "state",
+      "projection": "order_stateL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "modifier_id",
+      "projection": "usrL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "creator_id",
+      "projection": "usrL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Service_order",
+  "name": "DataLinejhf12service_orderE",
+  "className": "service_orderE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-order",
+      "modelProjection": "service_orderE"
+    }
+  ]
+}

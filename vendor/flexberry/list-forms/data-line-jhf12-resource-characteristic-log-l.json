@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-resource-characteristic-log-e",
+  "editForm": "data-line-jhf12-resource-characteristic-log-e",
+  "external": false,
+  "caption": "Resource_characteristic_log",
+  "name": "DataLinejhf12resource_characteristic_logL",
+  "className": "resource_characteristic_logL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-characteristic-log",
+      "modelProjection": "resource_characteristic_logL"
+    }
+  ]
+}

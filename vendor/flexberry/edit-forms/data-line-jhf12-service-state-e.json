@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Service_state",
+  "name": "DataLinejhf12service_stateE",
+  "className": "service_stateE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-state",
+      "modelProjection": "service_stateE"
+    }
+  ]
+}

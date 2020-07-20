@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-resource-log-e",
+  "editForm": "data-line-jhf12-resource-log-e",
+  "external": false,
+  "caption": "Resource_log",
+  "name": "DataLinejhf12resource_logL",
+  "className": "resource_logL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-log",
+      "modelProjection": "resource_logL"
+    }
+  ]
+}

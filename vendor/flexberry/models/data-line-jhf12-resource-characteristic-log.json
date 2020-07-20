@@ -1,0 +1,159 @@
+﻿{
+  "name": "DataLinejhf12resource_characteristic_log",
+  "modelName": "data-line-jhf12-resource-characteristic-log",
+  "className": "resource_characteristic_log",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "resource_characteristic_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "resource_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "start_time",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "end_time",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "resource_characteristic_logE",
+      "modelName": "data-line-jhf12-resource-characteristic-log",
+      "attrs": [
+        {
+          "name": "resource_characteristic_id",
+          "caption": "Resource_characteristic_id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "value",
+          "caption": "Value",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "resource_id",
+          "caption": "Resource_id",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "start_time",
+          "caption": "Start_time",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "end_time",
+          "caption": "End_time",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "resource_characteristic_logL",
+      "modelName": "data-line-jhf12-resource-characteristic-log",
+      "attrs": [
+        {
+          "name": "resource_characteristic_id",
+          "caption": "Resource_characteristic_id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "value",
+          "caption": "Value",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "resource_id",
+          "caption": "Resource_id",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "start_time",
+          "caption": "Start_time",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "end_time",
+          "caption": "End_time",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

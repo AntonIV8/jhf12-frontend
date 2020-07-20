@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-dba-e",
+  "editForm": "data-line-jhf12-dba-e",
+  "external": false,
+  "caption": "Dba",
+  "name": "DataLinejhf12dbaL",
+  "className": "dbaL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-dba",
+      "modelProjection": "dbaL"
+    }
+  ]
+}

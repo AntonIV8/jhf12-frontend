@@ -1,0 +1,176 @@
+﻿{
+  "name": "DataLinejhf12user_service_order",
+  "modelName": "data-line-jhf12-user-service-order",
+  "className": "user_service_order",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "action",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_action",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "user_id",
+      "relatedTo": "data-line-jhf12-usr",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "service_order_id",
+      "relatedTo": "data-line-jhf12-service-order",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "user_service_orderE",
+      "modelName": "data-line-jhf12-user-service-order",
+      "attrs": [
+        {
+          "name": "action",
+          "caption": "Action",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dt_action",
+          "caption": "Dt_action",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "user_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "default",
+          "caption": "User_id",
+          "name": "user_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_order_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "default",
+          "caption": "Service_order_id",
+          "name": "service_order_id",
+          "relatedTo": "data-line-jhf12-service-order",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "user_service_orderL",
+      "modelName": "data-line-jhf12-user-service-order",
+      "attrs": [
+        {
+          "name": "action",
+          "caption": "Action",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dt_action",
+          "caption": "Dt_action",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "user_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Login",
+          "name": "user_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_order_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Description",
+          "name": "service_order_id",
+          "relatedTo": "data-line-jhf12-service-order",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

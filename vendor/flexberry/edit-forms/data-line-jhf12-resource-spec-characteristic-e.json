@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "type",
+      "projection": "characteristic_typeL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "resource_spec_id",
+      "projection": "resource_specL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "dictionary_id",
+      "projection": "dictionaryL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Resource_spec_characteristic",
+  "name": "DataLinejhf12resource_spec_characteristicE",
+  "className": "resource_spec_characteristicE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-spec-characteristic",
+      "modelProjection": "resource_spec_characteristicE"
+    }
+  ]
+}

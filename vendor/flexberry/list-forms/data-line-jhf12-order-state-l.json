@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-order-state-e",
+  "editForm": "data-line-jhf12-order-state-e",
+  "external": false,
+  "caption": "Order_state",
+  "name": "DataLinejhf12order_stateL",
+  "className": "order_stateL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-order-state",
+      "modelProjection": "order_stateL"
+    }
+  ]
+}

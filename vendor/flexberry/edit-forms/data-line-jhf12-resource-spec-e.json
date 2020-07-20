@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "cardinality",
+      "projection": "cardinality_typeL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "resource_common_id",
+      "projection": "resource_commonL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "parent_service_spec_id",
+      "projection": "service_specL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "parent_id",
+      "projection": "resource_specL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Resource_spec",
+  "name": "DataLinejhf12resource_specE",
+  "className": "resource_specE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-spec",
+      "modelProjection": "resource_specE"
+    }
+  ]
+}

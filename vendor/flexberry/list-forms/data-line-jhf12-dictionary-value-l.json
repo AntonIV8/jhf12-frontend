@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-dictionary-value-e",
+  "editForm": "data-line-jhf12-dictionary-value-e",
+  "external": false,
+  "caption": "Dictionary_value",
+  "name": "DataLinejhf12dictionary_valueL",
+  "className": "dictionary_valueL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-dictionary-value",
+      "modelProjection": "dictionary_valueL"
+    }
+  ]
+}

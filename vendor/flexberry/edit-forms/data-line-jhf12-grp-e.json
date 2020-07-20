@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Grp",
+  "name": "DataLinejhf12grpE",
+  "className": "grpE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-grp",
+      "modelProjection": "grpE"
+    }
+  ]
+}

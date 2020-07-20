@@ -1,0 +1,103 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-user-resource-spec-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.action
+      class=(if (v-get validationObject "action" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-user-resource-spec-e.action-caption")
+      data-test-data-line-jhf12-user-resource-spec-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "action" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-user-resource-spec-e.dt_action-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_action
+      class=(if (v-get validationObject "dt_action" "isInvalid") "error")
+      data-test-data-line-jhf12-user-resource-spec-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_action" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-user-resource-spec-e.resource_spec_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.resource_spec_id
+      relationName="resource_spec_id"
+      projection="resource_specL"
+      title=(t "forms.data-line-jhf12-user-resource-spec-e.resource_spec_id-caption")
+      readonly=readonly
+      componentName="resource_spec_idLookup"
+      data-test-data-line-jhf12-user-resource-spec-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_spec_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.resource_spec_id.enum
+      class=(if (v-get validationObject "resource_spec_id.enum" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-user-resource-spec-e.resource_spec_id.enum-caption")
+      data-test-data-line-jhf12-user-resource-spec-e----------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_spec_id.enum" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-user-resource-spec-e.user_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.user_id
+      relationName="user_id"
+      projection="usrL"
+      title=(t "forms.data-line-jhf12-user-resource-spec-e.user_id-caption")
+      readonly=readonly
+      componentName="user_idLookup"
+      data-test-data-line-jhf12-user-resource-spec-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "user_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.user_id.login
+      class=(if (v-get validationObject "user_id.login" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-user-resource-spec-e.user_id.login-caption")
+      data-test-data-line-jhf12-user-resource-spec-e--------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "user_id.login" "messages")}}
+  </div>
+</form>

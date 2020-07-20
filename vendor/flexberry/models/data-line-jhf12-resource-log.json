@@ -1,0 +1,306 @@
+﻿{
+  "name": "DataLinejhf12resource_log",
+  "modelName": "data-line-jhf12-resource-log",
+  "className": "resource_log",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "resource_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "parent_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "cfs_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "parent_service_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "resource_shared_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "contragent_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "customer_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "resource_spec_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "external_id",
+      "type": "string",
+      "flexberryType": "varchar128",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "start_time",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "end_time",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "resource_logE",
+      "modelName": "data-line-jhf12-resource-log",
+      "attrs": [
+        {
+          "name": "resource_id",
+          "caption": "Resource_id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "parent_id",
+          "caption": "Parent_id",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "cfs_id",
+          "caption": "Cfs_id",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "parent_service_id",
+          "caption": "Parent_service_id",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "resource_shared_id",
+          "caption": "Resource_shared_id",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "contragent_id",
+          "caption": "Contragent_id",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "customer_id",
+          "caption": "Customer_id",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "resource_spec_id",
+          "caption": "Resource_spec_id",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "external_id",
+          "caption": "External_id",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "start_time",
+          "caption": "Start_time",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "end_time",
+          "caption": "End_time",
+          "hidden": false,
+          "index": 12
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "resource_logL",
+      "modelName": "data-line-jhf12-resource-log",
+      "attrs": [
+        {
+          "name": "resource_id",
+          "caption": "Resource_id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "parent_id",
+          "caption": "Parent_id",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "cfs_id",
+          "caption": "Cfs_id",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "parent_service_id",
+          "caption": "Parent_service_id",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "resource_shared_id",
+          "caption": "Resource_shared_id",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "contragent_id",
+          "caption": "Contragent_id",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "customer_id",
+          "caption": "Customer_id",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "resource_spec_id",
+          "caption": "Resource_spec_id",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "external_id",
+          "caption": "External_id",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "start_time",
+          "caption": "Start_time",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "end_time",
+          "caption": "End_time",
+          "hidden": false,
+          "index": 12
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

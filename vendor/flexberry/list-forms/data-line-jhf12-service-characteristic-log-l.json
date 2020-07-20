@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-service-characteristic-log-e",
+  "editForm": "data-line-jhf12-service-characteristic-log-e",
+  "external": false,
+  "caption": "Service_characteristic_log",
+  "name": "DataLinejhf12service_characteristic_logL",
+  "className": "service_characteristic_logL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-characteristic-log",
+      "modelProjection": "service_characteristic_logL"
+    }
+  ]
+}

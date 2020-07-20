@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Characteristic_type",
+  "name": "DataLinejhf12characteristic_typeE",
+  "className": "characteristic_typeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-characteristic-type",
+      "modelProjection": "characteristic_typeE"
+    }
+  ]
+}

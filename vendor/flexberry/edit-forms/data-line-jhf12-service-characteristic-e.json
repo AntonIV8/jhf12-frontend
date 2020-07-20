@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "service_id",
+      "projection": "serviceL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Service_characteristic",
+  "name": "DataLinejhf12service_characteristicE",
+  "className": "service_characteristicE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-characteristic",
+      "modelProjection": "service_characteristicE"
+    }
+  ]
+}

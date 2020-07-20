@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Resource_log",
+  "name": "DataLinejhf12resource_logE",
+  "className": "resource_logE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-log",
+      "modelProjection": "resource_logE"
+    }
+  ]
+}

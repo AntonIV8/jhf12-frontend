@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-service-state-e",
+  "editForm": "data-line-jhf12-service-state-e",
+  "external": false,
+  "caption": "Service_state",
+  "name": "DataLinejhf12service_stateL",
+  "className": "service_stateL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-state",
+      "modelProjection": "service_stateL"
+    }
+  ]
+}

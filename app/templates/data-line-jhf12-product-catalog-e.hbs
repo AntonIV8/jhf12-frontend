@@ -1,0 +1,67 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-product-catalog-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.spec_id
+      class=(if (v-get validationObject "spec_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-product-catalog-e.spec_id-caption")
+      data-test-data-line-jhf12-product-catalog-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "spec_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-product-catalog-e.name-caption")
+      data-test-data-line-jhf12-product-catalog-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.description
+      class=(if (v-get validationObject "description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-product-catalog-e.description-caption")
+      data-test-data-line-jhf12-product-catalog-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "description" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.version
+      class=(if (v-get validationObject "version" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-product-catalog-e.version-caption")
+      data-test-data-line-jhf12-product-catalog-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "version" "messages")}}
+  </div>
+</form>

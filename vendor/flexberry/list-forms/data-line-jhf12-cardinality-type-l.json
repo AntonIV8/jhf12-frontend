@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-cardinality-type-e",
+  "editForm": "data-line-jhf12-cardinality-type-e",
+  "external": false,
+  "caption": "Cardinality_type",
+  "name": "DataLinejhf12cardinality_typeL",
+  "className": "cardinality_typeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-cardinality-type",
+      "modelProjection": "cardinality_typeL"
+    }
+  ]
+}

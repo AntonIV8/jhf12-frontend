@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-characteristic-type-e",
+  "editForm": "data-line-jhf12-characteristic-type-e",
+  "external": false,
+  "caption": "Characteristic_type",
+  "name": "DataLinejhf12characteristic_typeL",
+  "className": "characteristic_typeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-characteristic-type",
+      "modelProjection": "characteristic_typeL"
+    }
+  ]
+}

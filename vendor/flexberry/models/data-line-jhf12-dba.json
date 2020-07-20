@@ -1,0 +1,141 @@
+﻿{
+  "name": "DataLinejhf12dba",
+  "modelName": "data-line-jhf12-dba",
+  "className": "dba",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "dt_upgrade",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "script",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "prev_version",
+      "relatedTo": "data-line-jhf12-dba",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "dbaE",
+      "modelName": "data-line-jhf12-dba",
+      "attrs": [
+        {
+          "name": "dt_upgrade",
+          "caption": "Dt_upgrade",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "script",
+          "caption": "Script",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "prev_version",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Prev_version",
+          "name": "prev_version",
+          "relatedTo": "data-line-jhf12-dba",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "dbaL",
+      "modelName": "data-line-jhf12-dba",
+      "attrs": [
+        {
+          "name": "dt_upgrade",
+          "caption": "Dt_upgrade",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "script",
+          "caption": "Script",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "prev_version",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 3,
+          "type": "default",
+          "caption": "Description",
+          "name": "prev_version",
+          "relatedTo": "data-line-jhf12-dba",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

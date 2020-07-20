@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-user-group-e",
+  "editForm": "data-line-jhf12-user-group-e",
+  "external": false,
+  "caption": "User_group",
+  "name": "DataLinejhf12user_groupL",
+  "className": "user_groupL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-user-group",
+      "modelProjection": "user_groupL"
+    }
+  ]
+}

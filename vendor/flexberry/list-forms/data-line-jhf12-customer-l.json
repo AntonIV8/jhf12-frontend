@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-customer-e",
+  "editForm": "data-line-jhf12-customer-e",
+  "external": false,
+  "caption": "Customer",
+  "name": "DataLinejhf12customerL",
+  "className": "customerL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-customer",
+      "modelProjection": "customerL"
+    }
+  ]
+}

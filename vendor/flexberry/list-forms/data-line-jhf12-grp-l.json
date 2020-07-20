@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-grp-e",
+  "editForm": "data-line-jhf12-grp-e",
+  "external": false,
+  "caption": "Grp",
+  "name": "DataLinejhf12grpL",
+  "className": "grpL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-grp",
+      "modelProjection": "grpL"
+    }
+  ]
+}

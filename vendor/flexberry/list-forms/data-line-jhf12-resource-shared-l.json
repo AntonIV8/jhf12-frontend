@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-resource-shared-e",
+  "editForm": "data-line-jhf12-resource-shared-e",
+  "external": false,
+  "caption": "Resource_shared",
+  "name": "DataLinejhf12resource_sharedL",
+  "className": "resource_sharedL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-shared",
+      "modelProjection": "resource_sharedL"
+    }
+  ]
+}

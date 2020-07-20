@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-resource-spec-e",
+  "editForm": "data-line-jhf12-resource-spec-e",
+  "external": false,
+  "caption": "Resource_spec",
+  "name": "DataLinejhf12resource_specL",
+  "className": "resource_specL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-spec",
+      "modelProjection": "resource_specL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-customer-acl-e",
+  "editForm": "data-line-jhf12-customer-acl-e",
+  "external": false,
+  "caption": "Customer_acl",
+  "name": "DataLinejhf12customer_aclL",
+  "className": "customer_aclL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-customer-acl",
+      "modelProjection": "customer_aclL"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "resource_id",
+      "projection": "resourceL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Resource_characteristic",
+  "name": "DataLinejhf12resource_characteristicE",
+  "className": "resource_characteristicE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-characteristic",
+      "modelProjection": "resource_characteristicE"
+    }
+  ]
+}

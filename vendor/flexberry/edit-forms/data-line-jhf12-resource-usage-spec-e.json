@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "type",
+      "projection": "characteristic_typeL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "resource_spec_id",
+      "projection": "resource_specL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Resource_usage_spec",
+  "name": "DataLinejhf12resource_usage_specE",
+  "className": "resource_usage_specE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-resource-usage-spec",
+      "modelProjection": "resource_usage_specE"
+    }
+  ]
+}

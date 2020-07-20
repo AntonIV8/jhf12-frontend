@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-user-service-order-e",
+  "editForm": "data-line-jhf12-user-service-order-e",
+  "external": false,
+  "caption": "User_service_order",
+  "name": "DataLinejhf12user_service_orderL",
+  "className": "user_service_orderL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-user-service-order",
+      "modelProjection": "user_service_orderL"
+    }
+  ]
+}

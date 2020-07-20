@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-jhf12-service-spec-e",
+  "editForm": "data-line-jhf12-service-spec-e",
+  "external": false,
+  "caption": "Service_spec",
+  "name": "DataLinejhf12service_specL",
+  "className": "service_specL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-service-spec",
+      "modelProjection": "service_specL"
+    }
+  ]
+}

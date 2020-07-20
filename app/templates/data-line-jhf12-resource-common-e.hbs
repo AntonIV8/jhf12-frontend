@@ -1,0 +1,105 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-resource-common-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.external_id
+      class=(if (v-get validationObject "external_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-common-e.external_id-caption")
+      data-test-data-line-jhf12-resource-common-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "external_id" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-common-e.name-caption")
+      data-test-data-line-jhf12-resource-common-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.description
+      class=(if (v-get validationObject "description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-common-e.description-caption")
+      data-test-data-line-jhf12-resource-common-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "description" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.category
+      class=(if (v-get validationObject "category" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-common-e.category-caption")
+      data-test-data-line-jhf12-resource-common-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "category" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.type
+      class=(if (v-get validationObject "type" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-common-e.type-caption")
+      data-test-data-line-jhf12-resource-common-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "type" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-common-e.dt_created-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_created
+      class=(if (v-get validationObject "dt_created" "isInvalid") "error")
+      data-test-data-line-jhf12-resource-common-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_created" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-common-e.dt_modified-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_modified
+      class=(if (v-get validationObject "dt_modified" "isInvalid") "error")
+      data-test-data-line-jhf12-resource-common-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_modified" "messages")}}
+  </div>
+
+</form>

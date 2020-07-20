@@ -1,0 +1,463 @@
+﻿{
+  "name": "DataLinejhf12order_item",
+  "modelName": "data-line-jhf12-order-item",
+  "className": "order_item",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "action",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "price",
+      "type": "decimal",
+      "flexberryType": "money",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_created",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_modified",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "log",
+      "type": "string",
+      "flexberryType": "varchar1024",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "clone_service_id",
+      "relatedTo": "data-line-jhf12-service",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "service_order_id",
+      "relatedTo": "data-line-jhf12-service-order",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "service_id",
+      "relatedTo": "data-line-jhf12-service",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "creator_id",
+      "relatedTo": "data-line-jhf12-usr",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "service_id",
+      "relatedTo": "data-line-jhf12-service",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "state",
+      "relatedTo": "data-line-jhf12-order-state",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "clone_service_id",
+      "relatedTo": "data-line-jhf12-service",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "creator_id",
+      "relatedTo": "data-line-jhf12-usr",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "modifier_id",
+      "relatedTo": "data-line-jhf12-usr",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "parent_id",
+      "relatedTo": "data-line-jhf12-order-item",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "state",
+      "relatedTo": "data-line-jhf12-order-state",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "order_itemE",
+      "modelName": "data-line-jhf12-order-item",
+      "attrs": [
+        {
+          "name": "action",
+          "caption": "Action",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "log",
+          "caption": "Log",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "clone_service_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "default",
+          "caption": "Clone_service_id",
+          "name": "clone_service_id",
+          "relatedTo": "data-line-jhf12-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_order_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "default",
+          "caption": "Service_order_id",
+          "name": "service_order_id",
+          "relatedTo": "data-line-jhf12-service-order",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": 9,
+          "type": "default",
+          "caption": "Service_id",
+          "name": "service_id",
+          "relatedTo": "data-line-jhf12-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "creator_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 11,
+          "type": "default",
+          "caption": "Creator_id",
+          "name": "creator_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "state",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 16
+            }
+          ],
+          "index": 15,
+          "type": "default",
+          "caption": "State",
+          "name": "state",
+          "relatedTo": "data-line-jhf12-order-state",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "modifier_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "login",
+              "caption": "Login",
+              "hidden": false,
+              "index": 22
+            }
+          ],
+          "index": 21,
+          "type": "default",
+          "caption": "Modifier_id",
+          "name": "modifier_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "parent_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "action",
+              "caption": "Action",
+              "hidden": false,
+              "index": 24
+            }
+          ],
+          "index": 23,
+          "type": "default",
+          "caption": "Parent_id",
+          "name": "parent_id",
+          "relatedTo": "data-line-jhf12-order-item",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "order_itemL",
+      "modelName": "data-line-jhf12-order-item",
+      "attrs": [
+        {
+          "name": "action",
+          "caption": "Action",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "log",
+          "caption": "Log",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "clone_service_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 5,
+          "type": "default",
+          "caption": "Name",
+          "name": "clone_service_id",
+          "relatedTo": "data-line-jhf12-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_order_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 6,
+          "type": "default",
+          "caption": "Description",
+          "name": "service_order_id",
+          "relatedTo": "data-line-jhf12-service-order",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 7,
+          "type": "default",
+          "caption": "Name",
+          "name": "service_id",
+          "relatedTo": "data-line-jhf12-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "creator_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 8,
+          "type": "default",
+          "caption": "Login",
+          "name": "creator_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "state",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 10,
+          "type": "default",
+          "caption": "Description",
+          "name": "state",
+          "relatedTo": "data-line-jhf12-order-state",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "modifier_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 13,
+          "type": "default",
+          "caption": "Login",
+          "name": "modifier_id",
+          "relatedTo": "data-line-jhf12-usr",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "parent_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 14,
+          "type": "default",
+          "caption": "Action",
+          "name": "parent_id",
+          "relatedTo": "data-line-jhf12-order-item",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

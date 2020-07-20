@@ -1,0 +1,239 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-resource-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.name-caption")
+      data-test-data-line-jhf12-resource-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.description
+      class=(if (v-get validationObject "description" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.description-caption")
+      data-test-data-line-jhf12-resource-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "description" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.external_id
+      class=(if (v-get validationObject "external_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.external_id-caption")
+      data-test-data-line-jhf12-resource-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "external_id" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-e.resource_spec_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.resource_spec_id
+      relationName="resource_spec_id"
+      projection="resource_specL"
+      title=(t "forms.data-line-jhf12-resource-e.resource_spec_id-caption")
+      readonly=readonly
+      componentName="resource_spec_idLookup"
+      data-test-data-line-jhf12-resource-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_spec_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.resource_spec_id.enum
+      class=(if (v-get validationObject "resource_spec_id.enum" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.resource_spec_id.enum-caption")
+      data-test-data-line-jhf12-resource-e----------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_spec_id.enum" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-e.cfs_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.cfs_id
+      relationName="cfs_id"
+      projection="serviceL"
+      title=(t "forms.data-line-jhf12-resource-e.cfs_id-caption")
+      readonly=readonly
+      componentName="cfs_idLookup"
+      data-test-data-line-jhf12-resource-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "cfs_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.cfs_id.name
+      class=(if (v-get validationObject "cfs_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.cfs_id.name-caption")
+      data-test-data-line-jhf12-resource-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "cfs_id.name" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-e.parent_service_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.parent_service_id
+      relationName="parent_service_id"
+      projection="serviceL"
+      title=(t "forms.data-line-jhf12-resource-e.parent_service_id-caption")
+      readonly=readonly
+      componentName="parent_service_idLookup"
+      data-test-data-line-jhf12-resource-e------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_service_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.parent_service_id.name
+      class=(if (v-get validationObject "parent_service_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.parent_service_id.name-caption")
+      data-test-data-line-jhf12-resource-e-----------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_service_id.name" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-e.resource_shared_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.resource_shared_id
+      relationName="resource_shared_id"
+      projection="resource_sharedL"
+      title=(t "forms.data-line-jhf12-resource-e.resource_shared_id-caption")
+      readonly=readonly
+      componentName="resource_shared_idLookup"
+      data-test-data-line-jhf12-resource-e-------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_shared_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.resource_shared_id.external_id
+      class=(if (v-get validationObject "resource_shared_id.external_id" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.resource_shared_id.external_id-caption")
+      data-test-data-line-jhf12-resource-e-------------------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resource_shared_id.external_id" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-e.customer_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.customer_id
+      relationName="customer_id"
+      projection="customerL"
+      title=(t "forms.data-line-jhf12-resource-e.customer_id-caption")
+      readonly=readonly
+      componentName="customer_idLookup"
+      data-test-data-line-jhf12-resource-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "customer_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.customer_id.customer
+      class=(if (v-get validationObject "customer_id.customer" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.customer_id.customer-caption")
+      data-test-data-line-jhf12-resource-e---------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "customer_id.customer" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-e.contragent_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.contragent_id
+      relationName="contragent_id"
+      projection="contragentL"
+      title=(t "forms.data-line-jhf12-resource-e.contragent_id-caption")
+      readonly=readonly
+      componentName="contragent_idLookup"
+      data-test-data-line-jhf12-resource-e--------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "contragent_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.contragent_id.contragent
+      class=(if (v-get validationObject "contragent_id.contragent" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.contragent_id.contragent-caption")
+      data-test-data-line-jhf12-resource-e-------------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "contragent_id.contragent" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-resource-e.parent_id-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.parent_id
+      relationName="parent_id"
+      projection="resourceL"
+      title=(t "forms.data-line-jhf12-resource-e.parent_id-caption")
+      readonly=readonly
+      componentName="parent_idLookup"
+      data-test-data-line-jhf12-resource-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_id" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.parent_id.name
+      class=(if (v-get validationObject "parent_id.name" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-resource-e.parent_id.name-caption")
+      data-test-data-line-jhf12-resource-e---------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_id.name" "messages")}}
+  </div>
+</form>

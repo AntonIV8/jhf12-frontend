@@ -1,0 +1,181 @@
+<h3 class="ui header">{{t "forms.data-line-jhf12-catalog-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.code
+      class=(if (v-get validationObject "code" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.code-caption")
+      data-test-data-line-jhf12-catalog-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "code" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.svc
+      class=(if (v-get validationObject "svc" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.svc-caption")
+      data-test-data-line-jhf12-catalog-e----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "svc" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.svc_type
+      class=(if (v-get validationObject "svc_type" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.svc_type-caption")
+      data-test-data-line-jhf12-catalog-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "svc_type" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.data_version
+      class=(if (v-get validationObject "data_version" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.data_version-caption")
+      data-test-data-line-jhf12-catalog-e-------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "data_version" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-catalog-e.dt_sync-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_sync
+      class=(if (v-get validationObject "dt_sync" "isInvalid") "error")
+      data-test-data-line-jhf12-catalog-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_sync" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.descr
+      class=(if (v-get validationObject "descr" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.descr-caption")
+      data-test-data-line-jhf12-catalog-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "descr" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.vat
+      class=(if (v-get validationObject "vat" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.vat-caption")
+      data-test-data-line-jhf12-catalog-e----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "vat" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-catalog-e.is_actual-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.is_actual
+      data-test-data-line-jhf12-catalog-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "is_actual" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-jhf12-catalog-e.dt_creation-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dt_creation
+      class=(if (v-get validationObject "dt_creation" "isInvalid") "error")
+      data-test-data-line-jhf12-catalog-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dt_creation" "messages")}}
+  </div>
+
+  <div class="field" data-test-data-line-jhf12-catalog-e-----------="true">
+    <label>{{t "forms.data-line-jhf12-catalog-e.parent_key-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.parent_key
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parent_key" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.measure
+      class=(if (v-get validationObject "measure" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.measure-caption")
+      data-test-data-line-jhf12-catalog-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "measure" "messages")}}
+  </div>
+  <div class="field" data-test-data-line-jhf12-catalog-e------------="true">
+    <label>{{t "forms.data-line-jhf12-catalog-e.measure_key-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.measure_key
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "measure_key" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.status
+      class=(if (v-get validationObject "status" "isInvalid") "error")
+      label=(t "forms.data-line-jhf12-catalog-e.status-caption")
+      data-test-data-line-jhf12-catalog-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "status" "messages")}}
+  </div>
+  <div class="field" data-test-data-line-jhf12-catalog-e------------="true">
+    <label>{{t "forms.data-line-jhf12-catalog-e.formula_key-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.formula_key
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "formula_key" "messages")}}
+  </div>
+  <div class="field" data-test-data-line-jhf12-catalog-e-------------------------="true">
+    <label>{{t "forms.data-line-jhf12-catalog-e.billing_object_type_guid-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.billing_object_type_guid
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "billing_object_type_guid" "messages")}}
+  </div>
+</form>

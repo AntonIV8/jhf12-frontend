@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "user_id",
+      "projection": "usrL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "service_order_id",
+      "projection": "service_orderL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "User_service_order",
+  "name": "DataLinejhf12user_service_orderE",
+  "className": "user_service_orderE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-jhf12-user-service-order",
+      "modelProjection": "user_service_orderE"
+    }
+  ]
+}

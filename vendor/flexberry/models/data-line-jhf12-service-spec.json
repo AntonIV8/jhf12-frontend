@@ -1,0 +1,323 @@
+﻿{
+  "name": "DataLinejhf12service_spec",
+  "modelName": "data-line-jhf12-service-spec",
+  "className": "service_spec",
+  "nameSpace": "DataLine.jhf12",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "version",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "enum",
+      "type": "string",
+      "flexberryType": "varchar32",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "flexberryType": "varchar3",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_created",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dt_modified",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "catalog_key",
+      "relatedTo": "data-line-jhf12-catalog",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "cardinality",
+      "relatedTo": "data-line-jhf12-cardinality-type",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "parent_id",
+      "relatedTo": "data-line-jhf12-service-spec",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "parent_id",
+      "relatedTo": "data-line-jhf12-service-spec",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "cardinality",
+      "relatedTo": "data-line-jhf12-cardinality-type",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "service_specE",
+      "modelName": "data-line-jhf12-service-spec",
+      "attrs": [
+        {
+          "name": "version",
+          "caption": "Version",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "enum",
+          "caption": "Enum",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "category",
+          "caption": "Category",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "catalog_key",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "code",
+              "caption": "Code",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "default",
+          "caption": "Catalog_key",
+          "name": "catalog_key",
+          "relatedTo": "data-line-jhf12-catalog",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "cardinality",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": 9,
+          "type": "default",
+          "caption": "Cardinality",
+          "name": "cardinality",
+          "relatedTo": "data-line-jhf12-cardinality-type",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "parent_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "enum",
+              "caption": "Enum",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 11,
+          "type": "default",
+          "caption": "Parent_id",
+          "name": "parent_id",
+          "relatedTo": "data-line-jhf12-service-spec",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "service_specL",
+      "modelName": "data-line-jhf12-service-spec",
+      "attrs": [
+        {
+          "name": "version",
+          "caption": "Version",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "enum",
+          "caption": "Enum",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "category",
+          "caption": "Category",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "dt_created",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "dt_modified",
+          "caption": "Dt_modified",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "catalog_key",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 7,
+          "type": "default",
+          "caption": "Code",
+          "name": "catalog_key",
+          "relatedTo": "data-line-jhf12-catalog",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "cardinality",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 8,
+          "type": "default",
+          "caption": "Description",
+          "name": "cardinality",
+          "relatedTo": "data-line-jhf12-cardinality-type",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "parent_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 9,
+          "type": "default",
+          "caption": "Enum",
+          "name": "parent_id",
+          "relatedTo": "data-line-jhf12-service-spec",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
